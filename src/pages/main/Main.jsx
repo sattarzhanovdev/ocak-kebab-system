@@ -14,6 +14,10 @@ const Main = () => {
       REQUEST.postBaskets({qrcode_id: tableId})
         .then(res => localStorage.setItem('basketId', res.data.id))
     }
+
+    setInterval(() => {
+      localStorage.clear()
+    }, 50000);
   }, [tableId])
 
   return (
