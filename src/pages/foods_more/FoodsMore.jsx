@@ -73,7 +73,7 @@ const FoodsMore = () => {
           {
             item.product_ingredients.length !== 0 ?
             item.product_ingredients.map((ing, i) => (
-              <h5 key={i}>{ing.title.length > 16 ? `${ing.title.slice(0, 16)}...` : ing.title} <span>{ing.gram} гр.</span></h5>
+              <h5 key={i}>{ing.title.length > 16 ? `${ing.title.slice(0, 16)}...` : ing.title} <span>{ing.gram} {ing.type_weight}</span></h5>
             )) :
             <h5>
               Ингредиентов нету
