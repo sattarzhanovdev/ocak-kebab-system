@@ -9,13 +9,11 @@ const Main = () => {
   const basketId = localStorage.getItem('basketId')
 
   React.useEffect(() => {
-    // localStorage.setItem('tableId', tableId)
-    // if(!basketId){
-    //   REQUEST.postBaskets({qrcode_id: tableId})
-    //     .then(res => localStorage.setItem('basketId', res.data.id))
-    // }
-  localStorage.clear()
-    
+    localStorage.setItem('tableId', tableId)
+    if(!basketId){
+      REQUEST.postBaskets({qrcode_id: tableId})
+        .then(res => localStorage.setItem('basketId', res.data.id))
+    }
   }, [tableId])
 
   return (
