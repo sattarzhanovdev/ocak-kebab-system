@@ -17,6 +17,9 @@ const Confirm = ({base, setRefresh, setActiveSide}) => {
         setItem({title: 'Ваш заказ отправлен!', icon: 'success'})
         localStorage.clear()
         setActive(true)
+        setTimeout(() => {
+          window.location.reload()
+        }, 2000);
       })
   }
   
