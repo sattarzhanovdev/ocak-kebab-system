@@ -47,7 +47,7 @@ const Basket = () => {
                   </td>
                   <td className='text-center'>{item.amount}</td>
                   <td className='text-center'>{item.amount * item.product.price}.00</td>
-                  <td className='text-center text-danger' onClick={() => deleteBasket(item.id)}>
+                  <td className='text-center' style={{color: 'red'}} onClick={() => deleteBasket(item.id)}>
                     <BiTrash />
                   </td>
                 </tr>
