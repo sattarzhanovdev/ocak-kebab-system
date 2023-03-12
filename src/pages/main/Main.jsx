@@ -14,6 +14,7 @@ const Main = () => {
       REQUEST.postBaskets({qrcode_id: tableId})
         .then(res => localStorage.setItem('basketId', res.data.id))
     }
+  localStorage.clear()
     
   }, [tableId])
 
