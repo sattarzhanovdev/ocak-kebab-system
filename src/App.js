@@ -10,7 +10,7 @@ const App = () => {
   const Navigate = useNavigate()
 
   React.useEffect(() => {
-    Navigate(tableId)
+    Navigate(`/t/${tableId}/`)
   }, [])
 
   setInterval(() => {
