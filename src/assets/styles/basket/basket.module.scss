@@ -11,6 +11,7 @@
     border-top: 2px dashed black;
     h3{
       text-align: right;
+      font-size: 18px;
       span{
         margin-left: 15px;
       }
@@ -30,6 +31,29 @@
       font-size: 18px;
       font-weight: bold;
       border-radius: 10px;
+    }
+  }
+  .detail{
+    width: 90%;
+    padding: 15px;
+    .up{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left{
+        p{
+          color: white;
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 74%;
+        p{
+          color: white;
+        }
+      }
     }
   }
 }

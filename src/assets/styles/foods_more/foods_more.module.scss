@@ -28,6 +28,9 @@
       object-position: center;
     }
   }
+  h2{
+    margin: 10px 0;
+  }
   .counter{
     width: 100%;
     display: flex;
@@ -69,6 +72,7 @@
       padding: 10px 0;
       border-bottom: 1px dotted black;
       margin: 0;
+      font-size: 14px;
       &:nth-child(1){
         border-bottom: 1px solid black;
         padding: 10px 0;

@@ -79,7 +79,6 @@ const FoodsMore = () => {
               Ингредиентов нету
             </h5>
           }
-          <h5 className={cls.all}>ㅤ<span>Всего: </span></h5>
         </div>  
       </div>
       <div className={cls.add_to_cart}>

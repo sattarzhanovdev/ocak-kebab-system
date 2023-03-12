@@ -11,34 +11,22 @@ const BasketDetail = ({item, setRefresh}) => {
   }
 
   return (
-    <div className={cls.detail}> 
-      <div className={cls.up}>
-        <div className={cls.left}>
-          <p>Фото</p>
-        </div>
-        <div className={cls.right}>
-          <p>Кол-во</p>
-          <p>Сумма</p>
-          <p>Действие</p>
-        </div>
+    <div className={cls.down}>
+      <div className={cls.left}>
+        <Components.Image
+          src={item.product.image}
+          alt={item.product.title}
+        />
       </div>
-      <div className={cls.down}>
-        <div className={cls.left}>
-          <Components.Image
-            src={item.product.image}
-            alt={item.product.title}
-          />
-        </div>
-        <div className={cls.right}>
-          <p>{item.amount}</p>
-          <p>{item.amount * item.product.price}</p>
-          <p
-            className={cls.trash}
-            onClick={() => deleteBasket(item.id)}
-          >
-            <BiTrash />
-          </p>
-        </div>
+      <div className={cls.right}>
+        <p>{item.amount}</p>
+        <p>{item.amount * item.product.price}</p>
+        <p
+          className={cls.trash}
+          onClick={() => deleteBasket(item.id)}
+        >
+          <BiTrash />
+        </p>
       </div>
     </div>
   )
