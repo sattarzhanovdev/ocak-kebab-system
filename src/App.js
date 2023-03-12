@@ -8,6 +8,8 @@ const App = () => {
     window.location.reload()
   }, 50000);
 
+  localStorage.clear()
+
   return (
     <div>
       <Routes />
