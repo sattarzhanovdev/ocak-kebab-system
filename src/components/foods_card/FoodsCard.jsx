@@ -30,7 +30,7 @@ const FoodsCard = ({item}) => {
           <span>{item?.price} сом</span>
         </div>
         <div className={cls.row}>
-          <p>250гр</p> 
+          <p>ㅤ</p> 
           <div className={cls.cooking__time}>
             <BiTime /> <span>{item.ready_time} мин</span>
           </div>
